@@ -1,0 +1,25 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "noEmit": true,
+        "strict": true,
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "ES2020",
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "types": ["node", "vite/client", "vitest"],
+        "baseUrl": ".",
+        "paths": {}
+    },
+    "exclude": ["node_modules", "tmp"]
+}

@@ -1,35 +1,42 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "targetDefaults": {
-    "build": {
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "cli": {
+        "packageManager": "pnpm"
     },
-    "lint": {
-      "cache": true
+    "targetDefaults": {
+        "build": {
+            "cache": true,
+            "dependsOn": ["^build"],
+            "inputs": ["production", "^production"]
+        },
+        "lint": {
+            "cache": true,
+            "inputs": ["default", "^production"]
+        },
+        "test": {
+            "cache": true,
+            "inputs": [
+                "default",
+                "^production"
+            ]
+        },
+        "e2e": {
+            "cache": true
+        }
     },
-    "test": {
-      "cache": true
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "production": [
+            "default",
+            "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+            "!{projectRoot}/tsconfig.spec.json",
+            "!{projectRoot}/.eslintrc.json",
+            "!{projectRoot}/eslint.config.js",
+            "!{projectRoot}/jest.config.[jt]s",
+            "!{projectRoot}/src/test-setup.[jt]s",
+            "!{projectRoot}/test-setup.[jt]s"
+        ],
+        "sharedGlobals": []
     },
-    "e2e": {
-      "cache": true
-    }
-  },
-  "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "production": [
-      "default"
-    ],
-    "sharedGlobals": []
-  },
-  "nxCloudAccessToken": "OTM5ZWY0YWQtZWZjNS00YjEyLThjNzgtOGVjMGI1ZDAzYzFmfHJlYWQtd3JpdGU="
+    "nxCloudAccessToken": "OTM5ZWY0YWQtZWZjNS00YjEyLThjNzgtOGVjMGI1ZDAzYzFmfHJlYWQtd3JpdGU="
 }
