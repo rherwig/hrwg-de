@@ -1,28 +1,21 @@
-import baseConfig from '../../eslint.config.js';
-import tsParser from '@typescript-eslint/parser';
-import { FlatCompat } from '@eslint/eslintrc';
-import { fileURLToPath } from 'url';
-import path from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const baseConfig = require('../../eslint.config.js');
+const tsParser = require('@typescript-eslint/parser');
+const { FlatCompat } = require('@eslint/eslintrc');
 
 const compat = new FlatCompat({
     baseDirectory: __dirname,
 });
 
-export default [
+module.exports = [
     ...baseConfig,
     ...compat.plugins('qwik'),
     ...compat.extends('plugin:qwik/recommended'),
     {
-        files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
+        files: ['*.ts', '*.tsx'],
         languageOptions: {
             parser: tsParser,
             parserOptions: {
-                project: [
-                    './tsconfig.*?.json',
-                ],
+                project: ['apps/website/tsconfig.*?.json'],
                 ecmaVersion: 2020,
                 sourceType: 'module',
                 ecmaFeatures: {

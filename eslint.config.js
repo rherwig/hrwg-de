@@ -1,5 +1,3 @@
-import config from '@hrwg/eslint-config';
+const config = require('@hrwg/eslint-config');
 
-export default [
-    ...config,
-];
+module.exports = [...config];

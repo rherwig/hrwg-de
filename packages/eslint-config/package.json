@@ -1,6 +1,4 @@
 {
     "name": "@hrwg/eslint-config",
-    "type": "module",
-    "main": "eslint.config.js",
-    "module": "eslint.config.js"
+    "main": "eslint.config.js"
 }

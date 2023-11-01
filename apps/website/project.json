@@ -75,7 +75,7 @@
             ],
             "options": {
                 "lintFilePatterns": [
-                    "apps/website/**/*.{ts,tsx,js,jsx}"
+                    "apps/website/**/*.tsx"
                 ]
             }
         }

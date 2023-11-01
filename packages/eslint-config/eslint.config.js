@@ -1,12 +1,12 @@
-import nxPlugin from '@nx/eslint-plugin';
-import js from '@eslint/js';
-import globals from 'globals';
-import jsoncParser from 'jsonc-eslint-parser';
-import tsParser from '@typescript-eslint/parser';
-import ts from '@typescript-eslint/eslint-plugin';
-import prettier from 'eslint-config-prettier';
+const nxPlugin = require('@nx/eslint-plugin');
+const js = require('@eslint/js');
+const globals = require('globals');
+const jsoncParser = require('jsonc-eslint-parser');
+const tsParser = require('@typescript-eslint/parser');
+const ts = require('@typescript-eslint/eslint-plugin');
+const prettier = require('eslint-config-prettier');
 
-export default [
+module.exports = [
     js.configs.recommended,
     {
         plugins: {
@@ -15,6 +15,7 @@ export default [
         },
     },
     {
+        files: ['*.ts', '*.tsx'],
         languageOptions: {
             parser: tsParser,
             parserOptions: {
@@ -35,7 +36,7 @@ export default [
         rules: {},
     },
     {
-        files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
+        files: ['*.ts', '*.tsx', '*.js'],
         rules: {
             '@nx/enforce-module-boundaries': [
                 'error',

@@ -11,7 +11,7 @@
         },
         "lint": {
             "cache": true,
-            "inputs": ["default", "^production"]
+            "inputs": ["default"]
         },
         "test": {
             "cache": true,
