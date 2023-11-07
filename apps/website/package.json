@@ -1,0 +1,7 @@
+{
+    "name": "@hrwg/website",
+    "private": true,
+    "scripts": {
+        "qwik": "qwik"
+    }
+}

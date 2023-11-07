@@ -1,0 +1,11 @@
+{
+    "home": {
+        "title": "Hauptseite",
+        "intro": {
+            "headline": "Willkommen auf meiner Website!",
+            "subline": "Sie ist momentan in Entwicklung und wird sich regelmäßig ändern.",
+            "text": "Schau gerne hin und wieder vorbei!",
+            "cta": "Zum CV"
+        }
+    }
+}

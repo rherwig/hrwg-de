@@ -1,0 +1,70 @@
+{
+    "experience": {
+        "restricted": "<Information versteckt>",
+        "print": "Drucken",
+        "hero": {
+            "name": "Rico Herwig",
+            "title": "Frontend Web Developer"
+        },
+        "facts": {
+            "info": "Info",
+            "social": "Social",
+            "skills": "Skills",
+            "languages": "Sprachen"
+        },
+        "address": {
+            "address": "Adresse",
+            "country": "Deutschland",
+            "phone": "Telefon",
+            "mail": "E-Mail",
+            "website": "Website"
+        },
+        "skills": {
+            "communication": "Kommunikation"
+        },
+        "languages": {
+            "german": "Deutsch",
+            "english": "Englisch",
+            "french": "Französisch",
+            "czech": "Tschechisch"
+        },
+        "timeline": {
+            "introduction": {
+                "headline": "Vorstellung",
+                "p1": "Hi, ich bin Rico - passionierter Frontend Entwickler aus Nord-Deutschland.",
+                "p2": "Ein Frontend-Entwickler zu sein, bedeutet für mich ständiges Lernen; es bedeutet Testen und Evaluieren; und es bedeutet, sich ständig anzupassen.",
+                "p3": "Jeder Tag bringt neue Technologien, neue Trends oder spannende Tools. Manchmal ist es schwierig, das was bleibt von dem zu unterscheiden, was nur ein Sturm im Wasserglas ist. Ich betrachte es sowohl als meine Aufgabe, als auch als meine Passion, all das - zusammen mit meiner Erfahrung - in Next-Generation-Frontends zu verwandeln, die dem Kunden nicht nur wirtschaftlich gut passen!",
+                "p4": "Neben dem Coden, liebe ich es, Musik zu machen und Videospiele zu spielen."
+            },
+            "education": {
+                "title": "Ausbildung",
+                "headline": "B.Sc. Wirtschaftsinformatik",
+                "p1": "Duales Studium an der International Business School Oldenburg in Kooperation mit EWE Netz GmbH.",
+                "p2": "Thema der Thesis: Optimierung von Website Teasern durch den Einsatz von Persuasive Technology"
+            },
+            "experience": {
+                "headline": "Berufliche Laufbahn",
+                "tobit": {
+                    "headline": "Web Application Developer - Tobit.Software",
+                    "p1": "Bei meinem ersten Job nach dem Studium war ich unter anderen für das E-Commerce-Modul des Mobile-Frameworks chayns verantwortlich.",
+                    "p2": "Unter Einsatz von React, C# und TSQL implementierten mein Team und ich einen Online-Shop von Grund auf und machten ihn via chayns über die App-Stores für jeden verfügbar."
+                },
+                "shopmacher": {
+                    "headline": "Frontend Developer - SHOPMACHER",
+                    "p1": "Bei SHOPMACHER habe ich an diversen Online-Shops entwickelt und diese bei Launch und Weiterentwicklung begleitet.",
+                    "p2": "Die dort betreuten Shops basierten auf Shopware 5 + 6 sowie Oxid und Shopify.",
+                    "p3": "Wesentlicher Bestandteil meiner Arbeit war die Entwicklung von Plugins, die Optimierung von Frontend-(Performance) und Erstellung von CMS Elementen in Abstimmung mit den Kunden."
+                },
+                "kellerkinder": {
+                    "headline": "Senior Frontend Developer - Kellerkinder",
+                    "p1": "Die Kellerkinder waren mein Einstieg in die 100%-Remote-Arbeit, die ich seither verfolge.",
+                    "p2": "Dort habe ich in einem Team von Shopware-Experten an diversen Online-Shop-Frontends gearbeitet, CMS-Elemente im Shopware Kontext entwickelt und gemeinsam mit Kunden und Kollegen die Frontend-Visionen unserer Kunden ausgearbeitet."
+                },
+                "iflow": {
+                    "headline": "Senior Frontend Developer - i-flow",
+                    "p1": "Bei i-flow arbeite ich an der Vernetzung von Fabriken und IT. Als Frontend Developer einer Software zum Harmonisieren von Daten im IIoT Bereich, ist mein Ziel, ein UI zu erschaffen, das von jedem - auch ohne technische Kenntnisse - mit Enthusiasmus genutzt werden kann."
+                }
+            }
+        }
+    }
+}

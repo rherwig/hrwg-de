@@ -15,4 +15,5 @@ addEventListener('install', () => self.skipWaiting());
 
 addEventListener('activate', () => self.clients.claim());
 
+// eslint-disable-next-line no-undef
 declare const self: ServiceWorkerGlobalScope;

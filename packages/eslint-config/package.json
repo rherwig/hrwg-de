@@ -1,4 +1,7 @@
 {
     "name": "@hrwg/eslint-config",
-    "main": "eslint.config.js"
+    "main": "index.js",
+    "exports": {
+        ".": "./index.js"
+    }
 }

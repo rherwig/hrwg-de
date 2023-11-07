@@ -1,0 +1,70 @@
+{
+    "experience": {
+        "restricted": "<Information restricted>",
+        "print": "Print",
+        "hero": {
+            "name": "Rico Herwig",
+            "title": "Frontend Web Developer"
+        },
+        "facts": {
+            "info": "Info",
+            "social": "Social",
+            "skills": "Skills",
+            "languages": "Languages"
+        },
+        "address": {
+            "address": "Address",
+            "country": "Germany",
+            "phone": "Phone",
+            "mail": "E-Mail",
+            "website": "Website"
+        },
+        "skills": {
+            "communication": "Communication"
+        },
+        "languages": {
+            "german": "German",
+            "english": "English",
+            "french": "French",
+            "czech": "Czech"
+        },
+        "timeline": {
+            "introduction": {
+                "headline": "Introduction",
+                "p1": "Hi, I'm Rico - a passionate Frontend Developer from nothern Germany.",
+                "p2": "Being a frontend developer - to me - means to research; it means to test; and it means to adapt constantly.",
+                "p3": "Every day brings new technologies, new trends or exciting tooling. Sometimes, it is hard to tell between those to stay and those that are merely a storm in a teacup. I consider it both my responsibility and passion to compile all this together with my experience into next generation frontends that match the customer's needs and budget!",
+                "p4": "Besides coding, I also love to play music and video games."
+            },
+            "education": {
+                "title": "Education",
+                "headline": "B.Sc. Business-Informatics",
+                "p1": "Integrated Degree Program at the International Business School Oldenburg partnered with EWE Netz GmbH.",
+                "p2": "Topic of the paper: Optimierung von Website Teasern durch den Einsatz von Persuasive Technology"
+            },
+            "experience": {
+                "headline": "Experience",
+                "tobit": {
+                    "headline": "Web Application Developer - Tobit.Software",
+                    "p1": "At my first job after university, I was responsible for the E-Commerce-Module of the Mobile-Framework chayns.",
+                    "p2": "Using React, C# und TSQL, my team and I implemented an online-shop from the ground up and published it via chayns for everyone to download on the app store."
+                },
+                "shopmacher": {
+                    "headline": "Frontend Developer - SHOPMACHER",
+                    "p1": "At SHOPMACHER I worked for many different customers and accompanied them and their online shops - be it a launch or development.",
+                    "p2": "The shops I got to work on there were mostly Shopware 5 + 6 as well as Oxid and Shopify based.",
+                    "p3": "The main part of my work has been the development of plugins, optimization of frontend-(performance) and the creation of CMS elements in close contact with the customer."
+                },
+                "kellerkinder": {
+                    "headline": "Senior Frontend Developer - Kellerkinder",
+                    "p1": "Working with the Kellerkinder was my introduction into working 100%-remotely, which I still do and love to this day.",
+                    "p2": "There, I worked alongside a team of true Shopware experts, improving online shop frontends, creating customer experiences and working on the frontend visions of our customers."
+                },
+                "iflow": {
+                    "headline": "Senior Frontend Developer - i-flow",
+                    "p1": "At i-flow, my goal is to connect factories and IT. As Frontend Developer for data-harmonization-software in the IIoT environment, it is my goal, to create a user-experience, that can be enjoyed by everyone - tech-savvy or not."
+                }
+            }
+        }
+    }
+}

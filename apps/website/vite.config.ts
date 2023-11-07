@@ -3,6 +3,7 @@ import { qwikCity } from '@builder.io/qwik-city/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
+import UnoCSS from 'unocss/vite';
 
 export default defineConfig({
     cacheDir: '../../node_modules/.vite/apps/website',
@@ -19,6 +20,7 @@ export default defineConfig({
             tsconfigFileNames: ['tsconfig.app.json'],
         }),
         tsconfigPaths({ root: '../../' }),
+        // UnoCSS(),
     ],
     server: {
         fs: {

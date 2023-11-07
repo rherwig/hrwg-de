@@ -1,0 +1,9 @@
+@use './tailwind';
+@use './typography';
+
+html,
+body {
+    @apply w-full h-full;
+    @apply font-sans antialiased;
+    @apply bg-background-dark text-primary-50;
+}

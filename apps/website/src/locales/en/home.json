@@ -1,0 +1,11 @@
+{
+    "home": {
+        "title": "Main-Page",
+        "intro": {
+            "headline": "Welcome to my website",
+            "subline": "It is currently under development and will change frequently.",
+            "text": "Check back from time to time!",
+            "cta": "View CV"
+        }
+    }
+}

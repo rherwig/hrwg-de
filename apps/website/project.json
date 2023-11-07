@@ -13,7 +13,8 @@
                 "outputPath": "dist/apps/website"
             },
             "configurations": {
-                "preview": {}
+                "preview": {},
+                "production": {}
             }
         },
         "build.client": {
@@ -25,7 +26,7 @@
         },
         "build.ssr": {
             "executor": "@nx/vite:build",
-            "defaultConfiguration": "preview",
+            "defaultConfiguration": "production",
             "options": {
                 "outputPath": "dist/apps/website"
             },
@@ -33,13 +34,24 @@
                 "preview": {
                     "ssr": "src/entry.preview.tsx",
                     "mode": "production"
+                },
+                "production": {
+                    "configFile": "apps/website/adapters/express/vite.config.ts",
+                    "mode": "production"
                 }
+            }
+        },
+        "locales.extract": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "qwik-speak-extract --supportedLangs=de-DE,en-US --assetsPath=src/locales",
+                "cwd": "apps/website"
             }
         },
         "preview": {
             "executor": "@nx/vite:preview-server",
             "options": {
-                "buildTarget": "website:build",
+                "buildTarget": "website:build:preview",
                 "port": 4300
             }
         },
