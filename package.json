@@ -1,6 +1,6 @@
 {
     "name": "@hrwg/source",
-    "version": "1.0.0-rc.0",
+    "version": "1.0.0-rc.1",
     "private": true,
     "description": "Mono-repository for my personal website - hrwg.de",
     "author": "Rico Herwig <rico@hrwg.de>",
