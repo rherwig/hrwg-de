@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
     website:
-        image: rherwig/hrwg-website:main
+        image: rherwig/hrwg-website:latest
         ports:
             - "4200:4200"
         environment:
-            - ORIGIN=http://localhost:4200
+            - ORIGIN=https://hrwg.de
