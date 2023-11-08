@@ -1,0 +1,8 @@
+localhost {
+    tls internal
+    reverse_proxy website:4200
+}
+
+hrwg.localhost {
+    reverse_proxy website:4200
+}

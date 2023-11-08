@@ -14,4 +14,4 @@ jobs:
           ssh_cert: ${{ secrets.SSH_SERVER_PUBLIC_KEY }}
           ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - run: docker --context hrwg stack deploy --compose-file docker-compose.production.yaml hrwg-stack
+      - run: docker --context hrwg stack deploy -c docker-compose.production.yaml hrwg-stack

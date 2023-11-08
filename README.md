@@ -90,6 +90,27 @@ docker build -f apps/website/Dockerfile -t rherwig/hrwg-website:latest .
 docker push rherwig/hrwg-website:latest
 ```
 
+In case the proxy needs to be rebuilt, run the following command.
+
+```bash
+docker build -t rherwig/hrwg-proxy:latest infrastructure/proxy
+# Push the image to Docker Hub (in case of deployment)
+docker push rherwig/hrwg-proxy:latest
+```
+
+Deploying the image to the production server requires a Docker Swarm to be set up.
+To do this, run the following commands on the server or via a Docker context.
+
+```bash
+docker swarm init
+```
+
+Then, the application can be deployed using the following command.
+
+```bash
+docker stack deploy -c docker-compose.production.yml hrwg-stack
+```
+
 ## Stack
 The website is built with the following technologies.
 

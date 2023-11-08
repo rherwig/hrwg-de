@@ -1,9 +1,15 @@
 version: '3.8'
 
 services:
-    website:
-        image: rherwig/hrwg-website:latest
-        ports:
-            - "4200:4200"
-        environment:
-            - ORIGIN=https://hrwg.de
+  website:
+    image: rherwig/hrwg-website:latest
+    ports:
+      - "4200:4200"
+    environment:
+      - ORIGIN=https://hrwg.de
+
+  proxy:
+    image: rherwig/hrwg-proxy:latest
+    ports:
+      - "80:80"
+      - "443:443"

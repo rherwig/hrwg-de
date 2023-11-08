@@ -1,0 +1,3 @@
+hrwg.de {
+    reverse_proxy website:4200
+}
