@@ -17,6 +17,14 @@ export const RouterHead = component$(() => {
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
+            <meta
+                name="description"
+                content="I am Rico, an professional JavaScript developer from northern Germany. Here, you can find out more about who I am and what I do."
+            />
+            <meta
+                name="theme-color"
+                content="#09090b"
+            />
             <link
                 rel="icon"
                 type="image/icon"

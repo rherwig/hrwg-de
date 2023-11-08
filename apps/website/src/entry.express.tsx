@@ -1,10 +1,11 @@
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 
+import express from 'express';
+import compression from 'compression';
 import { createQwikCity, type PlatformNode } from '@builder.io/qwik-city/middleware/node';
 import qwikCityPlan from '@qwik-city-plan';
 import { manifest } from '@qwik-client-manifest';
-import express from 'express';
 
 import render from './entry.ssr';
 
@@ -42,7 +43,7 @@ const { router, notFound } = createQwikCity({
 const app = express();
 
 // Enable gzip compression
-// app.use(compression());
+app.use(compression());
 
 // Static asset handlers
 // https://expressjs.com/en/starter/static-files.html
