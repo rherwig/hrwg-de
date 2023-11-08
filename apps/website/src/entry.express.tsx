@@ -12,8 +12,11 @@ declare global {
     interface QwikCityPlatform extends PlatformNode {}
 }
 
+// distDir E:\WebProjects\website\hrwg-de\dist\apps\website\dist
+// buildDir E:\WebProjects\website\hrwg-de\dist\apps\website\dist\build
+
 // Directories where the static assets are located
-const distDir = join(fileURLToPath(import.meta.url), '..', '..', 'dist');
+const distDir = join(fileURLToPath(import.meta.url), '..', '..', 'client');
 const buildDir = join(distDir, 'build');
 
 // Allow for dynamic port

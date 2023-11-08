@@ -3,6 +3,7 @@ import { qwikCity } from '@builder.io/qwik-city/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
+import { qwikSpeakInline } from 'qwik-speak/inline';
 
 export default defineConfig({
     cacheDir: '../../node_modules/.vite/apps/website',
@@ -17,6 +18,11 @@ export default defineConfig({
                 outDir: '../../dist/apps/website/server',
             },
             tsconfigFileNames: ['tsconfig.app.json'],
+        }),
+        qwikSpeakInline({
+            supportedLangs: ['en', 'de'],
+            defaultLang: 'en',
+            assetsPath: 'apps/website/src/locales',
         }),
         tsconfigPaths({ root: '../../' }),
     ],

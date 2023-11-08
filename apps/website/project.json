@@ -44,7 +44,7 @@
         "locales.extract": {
             "executor": "nx:run-commands",
             "options": {
-                "command": "qwik-speak-extract --supportedLangs=de-DE,en-US --assetsPath=src/locales",
+                "command": "qwik-speak-extract --supportedLangs=de,en --assetsPath=src/locales",
                 "cwd": "apps/website"
             }
         },

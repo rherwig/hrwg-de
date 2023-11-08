@@ -1,5 +1,5 @@
 import { $, component$ } from '@builder.io/qwik';
-import { Link } from '@builder.io/qwik-city';
+import { Link, useLocation } from '@builder.io/qwik-city';
 import { TbPrinter } from '@qwikest/icons/tablericons';
 import { useTranslate } from 'qwik-speak';
 
@@ -7,6 +7,7 @@ import { Button } from '../../ui';
 
 export default component$(() => {
     const t = useTranslate();
+    const location = useLocation();
 
     const handlePrintClick = $(() => {
         window.print();
@@ -23,6 +24,7 @@ export default component$(() => {
                     <ul class="flex gap-2">
                         <li>
                             <Link
+                                prefetch
                                 href="/cv"
                                 class="px-8 transition-colors hover:text-accent-600"
                             >
@@ -33,13 +35,15 @@ export default component$(() => {
                 </nav>
 
                 <div class="flex gap-2">
-                    <Button
-                        kind={'primary'}
-                        onClick$={handlePrintClick}
-                    >
-                        <TbPrinter />
-                        Print
-                    </Button>
+                    {location.url.pathname.includes('cv') && (
+                        <Button
+                            kind={'primary'}
+                            onClick$={handlePrintClick}
+                        >
+                            <TbPrinter />
+                            Print
+                        </Button>
+                    )}
                 </div>
             </div>
         </header>

@@ -10,7 +10,9 @@ export default component$(() => {
     return (
         <>
             <TimelineItem headline={t('experience.timeline.introduction.headline')}>
-                <TbHome q:slot="icon" />
+                <div q:slot="icon">
+                    <TbHome />
+                </div>
 
                 <p class="mb-2">{t('experience.timeline.introduction.p1')}</p>
 
@@ -22,7 +24,9 @@ export default component$(() => {
             </TimelineItem>
 
             <TimelineItem headline={t('experience.timeline.education.title')}>
-                <TbSchool q:slot="icon" />
+                <div q:slot="icon">
+                    <TbSchool />
+                </div>
             </TimelineItem>
 
             <TimelineItem
@@ -36,7 +40,9 @@ export default component$(() => {
             </TimelineItem>
 
             <TimelineItem headline={t('experience.timeline.experience.headline')}>
-                <TbBuildingEstate q:slot="icon" />
+                <div q:slot="icon">
+                    <TbBuildingEstate />
+                </div>
             </TimelineItem>
 
             <TimelineItem
@@ -80,7 +86,9 @@ export default component$(() => {
                 date="2024"
                 complete={false}
             >
-                <TbQuestionMark q:slot="icon" />
+                <div q:slot="icon">
+                    <TbQuestionMark />
+                </div>
             </TimelineItem>
         </>
     );

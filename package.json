@@ -12,6 +12,7 @@
         "lint": "nx lint website",
         "preview": "nx preview website",
         "serve": "nx serve website",
+        "serve:dist": "node dist/apps/website/server/entry.express.mjs",
         "qwik": "qwik"
     },
     "devDependencies": {
